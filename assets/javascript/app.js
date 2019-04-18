@@ -306,7 +306,6 @@ function chooseNewTopic() {
     });
 }
 
-
 function timeConverter(timeInSeconds) {
 
     var minutes = Math.floor(timeInSeconds / 60);
