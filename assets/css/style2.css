@@ -62,7 +62,7 @@ body {
 /* Settings Menu                                                      */
 /*====================================================================*/
 #settingsMenu {
-    background-image: url('../images/');
+    background-image: url('../images/pizzaprestosplash1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -219,7 +219,7 @@ select, option {
 /* Scoreboard                                                         */
 /*====================================================================*/
 #scoreboardScreen {
-    background-image: url('../images/forest.jpg');
+    background-image: url('../images/pizzaprestosplash1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

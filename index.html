@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Link to CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style2.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/animate.css" />
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
@@ -100,20 +102,6 @@
         </div>
 
         <!--=====================-->
-        <!-- Game Over Modal      -->
-        <!--=====================-->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <div id="game-over-container" class="row">
-                    <img id="game-over" class="col s12" src="./assets/images/gameover.png" alt="game-over">
-                </div>
-                <div class="row">
-                    <button class="col offset-s4 s4" id="modalButton" class="btn modal-trigger">Next</button>
-                </div>
-            </div>
-        </div>
-
-        <!--=====================-->
         <!-- Chef and Pizza      -->
         <!--=====================-->
         <div id="chefnPizzaContainer" class="row">
@@ -149,17 +137,16 @@
                         Who invented the first pizza?
                     </h5> -->
                     <p id="question">
-                        Who invented the first pizza
                     </p>
                 </div>
                 <div class="row bottomrow">
                     <div id="topAnswerRow" class="row">
-                        <div id="answer1" class="answer-button col s11 m5 answer z-depth-1 waves-effect waves-light waves-orange">Billy</div>
-                        <div id="answer2" class="answer-button col s11 m5 answer z-depth-1 waves-effect waves-light waves-orange">Bob</div>
+                        <div id="answer1" class="answer-button col s11 m5 answer z-depth-1 waves-effect waves-light waves-orange"></div>
+                        <div id="answer2" class="answer-button col s11 m5 answer z-depth-1 waves-effect waves-light waves-orange"></div>
                     </div>
                     <div id="bottomAnswerRow" class="row">
-                        <div id="answer3" class="answer-button col s11 m5 answer z-depth-1 waves-effect waves-light waves-orange">Joe</div>
-                        <div id="answer4" class="answer-button col s11 m5 answer z-depth-1 waves-effect waves-light waves-orange">Correct Answer</div>
+                        <div id="answer3" class="answer-button col s11 m5 answer z-depth-1 waves-effect waves-light waves-orange"></div>
+                        <div id="answer4" class="answer-button col s11 m5 answer z-depth-1 waves-effect waves-light waves-orange"></div>
                     </div>
                 </div>
             </div>
@@ -168,7 +155,7 @@
     <!--=====================================================================-->
     <!-- Scoreboard                                                          -->
     <!--=====================================================================-->
-    <div id="scoreboardScreen" class="screen container z-depth-1 hide">
+    <div id="scoreboardScreen" class="screen container z-depth-1 ">
         <div id="scoreBoardAndChefContainer" class="row">
             <div id="chefnDialogueScoreboard" class="col s4 row">
                 <div id="scoreboardDialogueContainer" class="row">
@@ -180,55 +167,46 @@
             </div>
             <div id="scoreboardContainer" class="col s8 white">
                 <h3>Scoreboard</h3>
-                <table class="highlight striped">
+                <table class="highlight">
                     <thead>
                         <tr>
                             <th>Ranking</th>
                             <th>Name</th>
-                            <th>Difficulty</th>
                             <th>Score</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr id="scoreRow1" class="scoreRow">
                             <td id="rank1">#1</td>
-                            <td id="name1">Billy</td>
-                            <td id="difficulty1">Hard</td>
+                            <td id="name1">Chris Stead</td>
                             <td id="score1">9310</td>
                         </tr>
                         <tr id="scoreRow2" class="scoreRow">
                             <td id="rank2">#2</td>
-                            <td id="name2">Bob</td>
-                            <td id="difficulty2">Medium</td>
+                            <td id="name2">Kevin Castro</td>
                             <td id="score2">8712</td>
 
                         </tr>
                         <tr id="scoreRow3" class="scoreRow">
                             <td id="rank3">#3</td>
-                            <td id="name3">Joe</td>
-                            <td id="difficulty3">Medium</td>
+                            <td id="name3">Kevin Lee</td>
                             <td id="score3">7623</td>
 
                         </tr>
                         <tr id="scoreRow4" class="scoreRow">
                             <td id="rank4">#4</td>
-                            <td id="name4">Maggie</td>
-                            <td id="difficulty4">Easy</td>
+                            <td id="name4">Carl Gunderson</td>
                             <td id="score4">6532</td>
                         </tr>
                         <tr id="scoreRow5" class="scoreRow">
                             <td id="rank5">#5</td>
                             <td id="name5">Xavier</td>
-                            <td id="difficulty5">Easy</td>
                             <td id="score5">5673</td>
                         </tr>
                     </tbody>
                 </table>
                 <button id='replayButton' class="scoreboardBtn btn waves-effect waves-light red">Replay
                     <i class="material-icons left">loop</i>
-                </button>
-                <button id='difficultyScreenChangeButton' class="scoreboardBtn btn waves-effect waves-light red">Difficulty
-                    <i class="material-icons right">send</i>
                 </button>
             </div>
         </div>
