@@ -1,15 +1,12 @@
--
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pizza Presto Baby</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Firebase CDN -->
-    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- <link rel="icon" type="image/x-icon" href="img/favicon.ico"> -->
@@ -45,12 +42,12 @@
     <div id="menuScreen" class="screen container z-depth-1">
         <div id="menuTitleRow" class="row">
             <div id="menuTitleContainer" class="col s6">
-                <img src="./assets/images/PizzaPrestoHeader.png" alt="Pizza Presto Title" id="menuTitle" class="responsive-img">
+                <img src="./assets/images/PizzaPrestoHeader.png" alt="Pizza Presto Title" id="menuTitle" class="animated zoomInDown delay-1s responsive-img">
             </div>
         </div>
         <div class="row">
             <div class="col s3">
-                <img id="playButton" src="./assets/images/play.png" alt="play button">
+                <img id="playButton" src="./assets/images/play.png" alt="play button" class="animated bounceIn delay-2s">
             </div>
         </div>
     </div>
@@ -127,7 +124,7 @@
                 </h5>
                 <div id="pizzaOrderRow">
                     <div id="pizzaOrderContainer">
-                        <img src="./assets/images/pizzas/pepperonipizza.png" alt="Pepperoni pizza" id="pizzaOrder">
+                        <img src="./assets/images/pizzas/pepperonipizza.png" alt="pizza order" id="pizzaOrder">
                     </div>
                 </div>
             </div>
@@ -155,59 +152,49 @@
     <!--=====================================================================-->
     <!-- Scoreboard                                                          -->
     <!--=====================================================================-->
-    <div id="scoreboardScreen" class="screen container z-depth-1 ">
-        <div id="scoreBoardAndChefContainer" class="row">
+    <div id="scoreboardScreen" class="screen container z-depth-1 hide">
+        <div id="scoreboardAndChefContainer" class="row valign-wrapper">
             <div id="chefnDialogueScoreboard" class="col s4 row">
                 <div id="scoreboardDialogueContainer" class="row">
-                    <p id="scoreboardDialogue">Good job!</p>
+                    <p id="scoreboardDialogue" class="z-depth-1">Everyday is a good day to eat pizza!</p>
                 </div>
-                <div id="scoreboardChefContainer" class="col s6">
+                <div id="scoreboardChefContainer" class="row">
                     <img src="./assets/images/happyChefwPizza.png" alt="happy chef with pizza" id="scoreboardChef">
                 </div>
             </div>
-            <div id="scoreboardContainer" class="col s8 white">
-                <h3>Scoreboard</h3>
-                <table class="highlight">
+            <div id="scoreboardContainer" class="col s7 white z-depth-1">
+                <h3 id="scoreboardTitle" class="center">Game Over</h3>
+                <table id="table" class="highlight">
                     <thead>
                         <tr>
-                            <th>Ranking</th>
+                            <th></th>
                             <th>Name</th>
                             <th>Score</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr id="scoreRow1" class="scoreRow">
-                            <td id="rank1">#1</td>
+                            <td id="rank1">
+                                <i class="material-icons left valign-wrapper">star</i>
+                                <b>High Score</b>
+                            </td>
                             <td id="name1">Chris Stead</td>
                             <td id="score1">9310</td>
                         </tr>
                         <tr id="scoreRow2" class="scoreRow">
-                            <td id="rank2">#2</td>
+                            <td id="rank2" class="center">
+                                <b>Your Score</b>
+                            </td>
                             <td id="name2">Kevin Castro</td>
                             <td id="score2">8712</td>
-
-                        </tr>
-                        <tr id="scoreRow3" class="scoreRow">
-                            <td id="rank3">#3</td>
-                            <td id="name3">Kevin Lee</td>
-                            <td id="score3">7623</td>
-
-                        </tr>
-                        <tr id="scoreRow4" class="scoreRow">
-                            <td id="rank4">#4</td>
-                            <td id="name4">Carl Gunderson</td>
-                            <td id="score4">6532</td>
-                        </tr>
-                        <tr id="scoreRow5" class="scoreRow">
-                            <td id="rank5">#5</td>
-                            <td id="name5">Xavier</td>
-                            <td id="score5">5673</td>
                         </tr>
                     </tbody>
                 </table>
-                <button id='replayButton' class="scoreboardBtn btn waves-effect waves-light red">Replay
-                    <i class="material-icons left">loop</i>
-                </button>
+                <div id="replayButtonContainer" class="container">
+                    <button id='replayButton' class="center scoreboardBtn btn waves-effect waves-light red">Replay
+                        <i class="material-icons left">loop</i>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -235,23 +222,16 @@
         </a>
         <ul>
             <li>
-                <a class="btn-floating red">
-                    <i class="material-icons">insert_chart</i>
+                <a id="replayButtonFAB" class="btn-floating blue darken-1 tooltipped" data-position="left" data-tooltip="Start Menu">
+                    <i class="material-icons">loop</i>
                 </a>
             </li>
             <li>
-                <a class="btn-floating yellow darken-1">
-                    <i class="material-icons">format_quote</i>
+                <a id="muteButton" class="btn-floating green darken-1">
+                    <i class="material-icons">volume_up</i>
                 </a>
-            </li>
-            <li>
-                <a class="btn-floating green">
-                    <i class="material-icons">publish</i>
-                </a>
-            </li>
-            <li>
-                <a class="btn-floating blue">
-                    <i class="material-icons">attach_file</i>
+                <a id="unmuteButton" class="btn-floating green darken-1 hide">
+                    <i class="material-icons">volume_off</i>
                 </a>
             </li>
         </ul>
@@ -262,13 +242,21 @@
     <!-- Audio                                                               -->
     <!--=====================================================================-->
     <iframe allow="autoplay" id="audio" style="display:none"></iframe>
-    <audio id="player" autoplay loop>
-        <source src="./assets/music/Overcooked 2 Soundtrack - Map.mp3" type="audio/mp3">
+    <audio id="introMusic" autoplay loop>
+        <source id="music" src="./assets/music/cipher.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gameMusic" loop>
+        <source id="music" src="./assets/music/Casa Bossa Nova.mp3" type="audio/mp3">
+    </audio>
+    <audio id="scoreboardMusic" loop>
+        <source id="music" src="./assets/music/Wallpaper.mp3" type="audio/mp3">
     </audio>
 
-
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
     <script src="./assets/javascript/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
     <script src="./assets/javascript/app.js"></script>
 </body>
+
 </html>

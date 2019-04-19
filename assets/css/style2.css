@@ -1,10 +1,10 @@
 body {
-    font-family: 'Ubuntu';
-    background: url('../images/prism.png');
-    height: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+  font-family: "Ubuntu";
+  background: url("../images/prism.png");
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 /*====================================================================*/
@@ -12,7 +12,7 @@ body {
 /*====================================================================*/
 
 #pizzaPrestoHeader {
-    height: 15vh;
+  height: 15vh;
 }
 
 /*====================================================================*/
@@ -22,250 +22,270 @@ body {
     margin-bottom: 0px;
 } */
 
+.screen {
+  height: 500px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+#menuScreen, #gameScreen, #settingsMenu, #scoreboardScreen {
+  max-width: 820px;
+  min-height: 550px;
+
+}
 /*====================================================================*/
 /* Menu Screen                                                        */
 /*====================================================================*/
-.screen {
-    height: 500px;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border-radius: 10px;
-}
 
 #menuScreen {
-    background-image: url('../images/pizzaprestosplash1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 600px;
-    max-width: 820px;
+  background-image: url("../images/italybackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #playButton:hover {
-    height: 70px;
-    cursor: pointer;
+  height: 70px;
+  cursor: pointer;
 }
 
 #menuTitleRow {
-    display: flex;
+  display: flex;
 }
 
 #menuTitleContainer {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /*====================================================================*/
 /* Settings Menu                                                      */
 /*====================================================================*/
 #settingsMenu {
-    background-image: url('../images/pizzaprestosplash1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
+  background-image: url("../images/italybackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
 }
 
 #formContainer {
-    padding: 20px 50px;
-    border-radius: 10px;
-    margin: 10% 5%;
-    width: 500px;
-    min-height: 350px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin: 10% 5%;
+  width: 500px;
+  min-height: 350px;
 }
 
 /* i don't think this does anything */
-select, option {
-    border-radius: 10px;
+select,
+option {
+  border-radius: 10px;
 }
 
 /* How do I center this? */
 #startGameButton {
-    margin: 10px auto;
+  margin: 10px auto;
 }
 
 /*====================================================================*/
 /* Game Screen                                                        */
 /*====================================================================*/
 #gameScreen {
-    background-image: url('../images/orangishKitchen.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+  background-image: url("../images/orangishKitchen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*=================*/
 /* Name And Scores */
 /*=================*/
-#usernameAndScoreContainer, #highScoreContainer {
-    background-image: url('../images/halftone-yellow.png');
-    border-radius: 10px;
-    color: black;
-    padding: 20px;
-    margin-top: 0px;
-    max-width: 300px;
+#usernameAndScoreContainer,
+#highScoreContainer {
+  background-image: url("../images/halftone-yellow.png");
+  border-radius: 10px;
+  color: black;
+  padding: 20px;
+  margin-top: 0px;
+  max-width: 300px;
+}
+
+#usernameAndScoreContainer {
+    font-size: 1.4rem;
 }
 
 #highScoreContainer {
-    font-size: 1.3rem;
-    padding: 10px;
-    text-align: center;
-} 
-
+  font-size: 1.3rem;
+  padding: 10px;
+  text-align: center;
+}
 
 /*============*/
 /* ChefnPizza */
 /*============*/
 #chef {
-    height: 300px;
+  height: 280px;
 }
 
 #dialogueContainer {
-    border-radius: 30px;
-    padding: 5%;
+  border-radius: 30px;
+  padding: 5%;
 }
 
 #pizzaContainer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #pizza {
-    height: 300px;
+  height: 280px;
 }
-
-
 
 /*============*/
 /* Bottom Row */
 /*============*/
 #questionAnswerRow {
-    background-image: url('../images/halftone-yellow.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 270px;
-    border-radius: 20px;
-    margin: 0 auto;
-    width: 100%;
+  background-image: url("../images/halftone-yellow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #timerContainer {
-    margin-left: 3%;
+  margin-left: 3%;
 }
 
 #pizzaOrderRow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #pizzaOrderContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: white;
-    height: 160px;
-    border-radius: 20px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+  height: 160px;
+  border-radius: 20px;
 }
 
 #pizzaOrder {
-    height: 146px;
-    margin: 0 auto;
+  height: 146px;
+  margin: 0 auto;
 }
 
 .answer {
-    background: #FFE388;
-    border-radius: 10px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2%;
+  background: #ffe388;
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
 }
 
 #questionRow {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #question {
-    text-align: justify;
-    padding-right: 15px;
-    font-size: 1.1rem;
+  text-align: justify;
+  padding-right: 15px;
+  font-size: 1.25rem;
 }
 
-#topAnswerRow, #bottomAnswerRow {
-    margin: 0 auto;
+#topAnswerRow,
+#bottomAnswerRow {
+  margin: 0 auto;
 }
 
 /*====================================================================*/
 /* Game Over Modal                                                       */
 /*====================================================================*/
 #game-over-container {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 /*====================================================================*/
 /* Scoreboard                                                         */
 /*====================================================================*/
 #scoreboardScreen {
-    background-image: url('../images/pizzaprestosplash1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    min-height: 600px;
+  /* background-image: url('../images/orangishKitchenNoBottomMargin.png'); */
+  background-image: url("../images/orangishKitchenNoBottomMargin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
-#chefnDialogueScoreboard, #scoreboardContainer {
-    margin: 10% 0;
-    min-height: 500px;
-
+#scoreboardAndChefContainer {
+  min-height: 550px;
 }
 
 #chefnDialogueScoreboard {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-#scoreboardChefContainer {
-    width: 300px;
-}
-
-#scoreboardChef {
-    height: 300px;
-    position: relative;
-    z-index: 2;
-}
-
-#scoreboardDialogue {
-    background-color: white;
-    padding: 5%;
-    border-radius: 20px;
-    text-align: center;
+  min-height: 500px;
+  margin-left: 20px;
 }
 
 #scoreboardContainer {
-    padding: 20px 50px;
-    border-radius: 10px;
-    /* width: 500px; */
+  margin: 10% 30px 10% 10px;
+  padding: 20% 10%;
 }
 
-.scoreboardBtn {
-    margin: 30px 5px;
-    border-radius: 20px;
+#chefnDialogueScoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#scoreboardChefContainer {
+  width: 300px;
+}
+
+#scoreboardChef {
+  height: 250px;
+  position: relative;
+  z-index: 3;
+}
+
+#scoreboardDialogue {
+  background-color: white;
+  padding: 30px 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+  max-width: 200px;
+}
+
+#scoreboardContainer {
+  padding: 20px 50px;
+  border-radius: 10px;
+  /* width: 500px; */
+}
+
+#replayButtonContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#replayButton {
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
 /*====================================================================*/
@@ -275,138 +295,142 @@ select, option {
 /* 992px and Below                       */
 /*=======================================*/
 @media only screen and (max-width: 992px) {
-    /*=========================*/
-    /* Game Screen             */
-    /*=========================*/
-    #usernameAndScoreContainer {
-        font-size: 1.2rem;
-        text-align: center;
+  /*=========================*/
+  /* Game Screen             */
+  /*=========================*/
+  #usernameAndScoreContainer {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
-    }
+  #highScoreContainer {
+    font-size: 1.2rem;
+  }
 
-    #highScoreContainer {
-        font-size: 1.2rem;
-    }
+  #pizza {
+    height: 250px;
+  }
 
-    #pizza {
-        height: 250px;
-    }
+  #question {
+      font-size: 1.1rem;
+  }
 }
-
 
 /*=======================================*/
 /* 600px and Below                       */
 /*=======================================*/
 @media only screen and (max-width: 600px) {
-    body {
-        background: #e53935;
-    }
+  body {
+    background: #e53935;
+  }
 
-    .screen {
-        margin: 0 auto;
-        width: 100%;
-    }
+  .screen {
+    margin: 0 auto;
+    width: 100%;
+  }
 
-    /*=========================*/
-    /* Menu Screen             */
-    /*=========================*/
-    #menuScreen {
-        height:700px;
-        background-position: left bottom;
-    }
+  /*=========================*/
+  /* Menu Screen             */
+  /*=========================*/
+  #menuScreen {
+    height: 700px;
+    background-position: left bottom;
+  }
 
-    /*=========================*/
-    /* Settings             */
-    /*=========================*/
-    #settingsMenu {
-        height:700px;
-        display: flex;
-        align-items: center;
-    }
+  /*=========================*/
+  /* Settings             */
+  /*=========================*/
+  #settingsMenu {
+    height: 700px;
+    display: flex;
+    align-items: center;
+  }
 
-    #formContainer {
-        height: 400px;
-    }    
+  #formContainer {
+    height: 400px;
+  }
 
-    /*=========================*/
-    /* Game Screen             */
-    /*=========================*/
-    #gameScreen {
-        background-position: 0px -80px;
-        border-radius: 0px;
-    }
+  /*=========================*/
+  /* Game Screen             */
+  /*=========================*/
+  #gameScreen {
+    background-position: 0px -80px;
+    border-radius: 0px;
+  }
 
-    /*============*/
-    /* ChefnPizza */
-    /*============*/
-    #chef {
-        height: 200px;
-    }
+  /*============*/
+  /* ChefnPizza */
+  /*============*/
+  #chef {
+    height: 200px;
+  }
 
-    #dialogueContainer {
-        border-radius: 30px;
-        padding: 3%;
-        font-size: 95%;
-    }
+  #dialogueContainer {
+    border-radius: 30px;
+    padding: 3%;
+    font-size: 95%;
+  }
 
-    #pizza {
-        height: 180px;
-    }
+  #pizza {
+    height: 180px;
+  }
 
-    /*============*/
-    /* Q&A Row    */
-    /*============*/
-    #pizzaOrder {
-        height: 100px;
-    }
+  /*============*/
+  /* Q&A Row    */
+  /*============*/
+  #pizzaOrder {
+    height: 100px;
+  }
 
-    #timerContainer {
-        text-align: center;
-        margin-left: 0;
-    }
+  #timerContainer {
+    text-align: center;
+    margin-left: 0;
+  }
 
-    #question {
-        font-size: 1rem;
-    }
+  #question {
+    font-size: 1rem;
+  }
 
-    #pizzaOrderRow {
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  #pizzaOrderRow {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .answer {
-        margin-top: 0;
-    }
+  .answer {
+    margin-top: 2.5px;
+    height: 40px;
+  }
 
-    #questionAnswerRow {
-        height: 370px;
-    }
+  #questionAnswerRow {
+    height: 300px;
+  }
+  /*=========================*/
+  /* Scoreboard              */
+  /*=========================*/
+  #scoreboardContainer {
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-right: 10px;
+  }
 
-}    
+  #scoreboardChef {
+      height: 250px;
+  }
 
+  #scoreboardDialogue {
+      font-size: 12px;
+  }
 
+  #scoreboardTitle {
+      font-size: 20px;
+  }
 
+  #table {
+      font-size: 0.8rem;
+  }
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
