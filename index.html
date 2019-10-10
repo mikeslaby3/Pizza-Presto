@@ -5,27 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pizza Presto Baby</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link rel="icon" type="image/x-icon" href="img/favicon.ico"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!-- Link to CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style2.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/animate.css" />
-
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-
 </head>
 
 <body>
-    <!--=====================================================================-->
-    <!-- Navbar                                                              -->
-    <!--=====================================================================-->
     <div class="navbar">
         <nav>
             <div class="nav-wrapper red darken-1">
@@ -36,9 +24,6 @@
         </nav>
     </div>
 
-    <!--=====================================================================-->
-    <!-- Menu Screen                                                         -->
-    <!--=====================================================================-->
     <div id="menuScreen" class="screen container z-depth-1">
         <div id="menuTitleRow" class="row">
             <div id="menuTitleContainer" class="col s6">
@@ -52,9 +37,6 @@
         </div>
     </div>
 
-    <!--=====================================================================-->
-    <!-- Settings Menu                                                       -->
-    <!--=====================================================================-->
     <div id="settingsMenu" class="screen z-depth-1 container hide">
         <div id="formContainer" class="white">
             <h3>Settings</h3>
@@ -77,13 +59,7 @@
         </div>
     </div>
 
-    <!--=====================================================================-->
-    <!-- Game Screen                                                         -->
-    <!--=====================================================================-->
     <div id="gameScreen" class="screen container z-depth-1 hide">
-        <!--=====================-->
-        <!-- Username And Scores -->
-        <!--=====================-->
         <div id="usernameAndScores" class="row">
             <h5 id="usernameAndScoreContainer" class="col s4 m3 l3">
                 Name:
@@ -98,9 +74,6 @@
             </h5>
         </div>
 
-        <!--=====================-->
-        <!-- Chef and Pizza      -->
-        <!--=====================-->
         <div id="chefnPizzaContainer" class="row">
             <div id="chefContainer" class="col s3">
                 <img src="./assets/images/happyChefwPizza.png" alt="" id="chef">
@@ -113,9 +86,6 @@
             </div>
         </div>
 
-        <!--=====================-->
-        <!-- Q&A Row             -->
-        <!--=====================-->
         <div class="container row" id="questionAnswerRow">
             <div class="col s5" id="timerAndPizzaOrderContainer">
                 <h5 id="timerContainer">
@@ -149,9 +119,7 @@
             </div>
         </div>
     </div>
-    <!--=====================================================================-->
-    <!-- Scoreboard                                                          -->
-    <!--=====================================================================-->
+
     <div id="scoreboardScreen" class="screen container z-depth-1 hide">
         <div id="scoreboardAndChefContainer" class="row valign-wrapper">
             <div id="chefnDialogueScoreboard" class="col s4 row">
@@ -200,22 +168,6 @@
 
     </div>
 
-
-    <!--=====================================================================-->
-    <!-- Footer                                                              -->
-    <!--=====================================================================-->
-    <!-- <footer class="page-footer">
-        <div class="footer-copyright">
-            <div class="container">
-                © 2014 Copyright Text
-            </div>
-        </div>
-    </footer> -->
-
-
-    <!--=====================================================================-->
-    <!-- Fixed Action Button                                                 -->
-    <!--=====================================================================-->
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large red">
             <i class="large material-icons">menu</i>
@@ -237,10 +189,6 @@
         </ul>
     </div>
 
-
-    <!--=====================================================================-->
-    <!-- Audio                                                               -->
-    <!--=====================================================================-->
     <iframe allow="autoplay" id="audio" style="display:none"></iframe>
     <audio id="introMusic" autoplay loop>
         <source id="music" src="./assets/music/cipher.mp3" type="audio/mp3">
@@ -252,7 +200,6 @@
         <source id="music" src="./assets/music/Wallpaper.mp3" type="audio/mp3">
     </audio>
 
-    <!-- Firebase CDN -->
     <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
     <script src="./assets/javascript/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
